@@ -1,11 +1,28 @@
-import { Button } from "@mui/material";
 import * as React from "react";
-import Layout from "../components/layout";
+import loadable from "@loadable/component";
+import Layout from "../components/global/layout";
+import Hero from "../components/home/hero";
+const About = loadable(() => import("../components/home/about"));
+const Services = loadable(() => import("../components/home/services"));
+const Facts = loadable(() => import("../components/home/facts"));
+const Pricing = loadable(() => import("../components/home/pricing"));
+const Reviews = loadable(() => import("../components/home/reviews"));
+const PreviousWorks = loadable(() =>
+  import("../components/home/previous-works")
+);
+const Contact = loadable(() => import("../components/home/contact"));
 
 const IndexPage = () => {
   return (
     <Layout>
-      <Button variant="contained">This is a fucking button</Button>
+      <Hero />
+      <About />
+      <Services />
+      <Facts />
+      <Pricing />
+      <Reviews />
+      <PreviousWorks />
+      <Contact />
     </Layout>
   );
 };
