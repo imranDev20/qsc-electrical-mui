@@ -6,3 +6,5 @@ const PortfolioPage = () => {
 };
 
 export default PortfolioPage;
+
+export const Head = () => <title>Portfolio</title>;

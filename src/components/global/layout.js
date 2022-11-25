@@ -61,6 +61,7 @@ export const theme = createTheme({
     text: {
       main: "#888888",
     },
+
     contrastThreshold: 3,
     tonalOffset: 0.2,
   },

@@ -15,9 +15,10 @@ import Button from "@mui/material/Button";
 import { Slide, useScrollTrigger } from "@mui/material";
 import { Link } from "gatsby";
 import ArrowCircleRightRoundedIcon from "@mui/icons-material/ArrowCircleRightRounded";
+import { theme } from "./layout";
 
 const drawerWidth = 240;
-const navItems = ["Home", "About", "Services", "Portfolio", "Contact"];
+export const navItems = ["Home", "About", "Services", "Portfolio", "Contact"];
 
 function HideOnScroll(props) {
   const { children, window } = props;
@@ -115,6 +116,7 @@ const DrawerAppBar = (props) => {
                 <Button
                   key={item}
                   component={Link}
+                  activeStyle={{ color: theme.palette.primary.main }}
                   to={
                     item === "Home"
                       ? "/"

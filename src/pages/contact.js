@@ -6,3 +6,5 @@ const ContactPage = () => {
 };
 
 export default ContactPage;
+
+export const Head = () => <title>Contact</title>;

@@ -6,3 +6,5 @@ const ServicesPage = () => {
 };
 
 export default ServicesPage;
+
+export const Head = () => <title>Services</title>;
