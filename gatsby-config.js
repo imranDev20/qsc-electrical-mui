@@ -83,6 +83,14 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `portfolio`,
+        path: `${__dirname}/src/contents/portfolio`,
+      },
+      __key: "images",
+    },
+    {
       resolve: "gatsby-background-image",
       options: {
         // add your own characters to escape, replacing the default ':/'

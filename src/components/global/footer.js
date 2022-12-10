@@ -1,4 +1,12 @@
-import { Box, Container, Grid, Typography, Link, Stack } from "@mui/material";
+import {
+  Box,
+  Container,
+  Grid,
+  Typography,
+  Link,
+  Stack,
+  Divider,
+} from "@mui/material";
 import React from "react";
 import { navItems } from "./drawer";
 import { theme } from "./layout";
@@ -192,6 +200,11 @@ const Footer = () => {
             ))}
           </Grid>
         </Grid>
+        <Divider sx={{ border: "1px solid rgba(255,255,255,.07)", my: 3 }} />
+        <Typography paragraph textAlign="center">
+          Copyright © {new Date().getFullYear()} QSC Electrical. All rights
+          reserved.
+        </Typography>
       </Container>
     </Box>
   );

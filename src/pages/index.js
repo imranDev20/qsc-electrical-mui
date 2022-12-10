@@ -10,6 +10,9 @@ const Reviews = loadable(() => import("../components/home/reviews"));
 const PreviousWorks = loadable(() =>
   import("../components/home/previous-works")
 );
+const WorkingProcess = loadable(() =>
+  import("../components/home/working-process")
+);
 const Contact = loadable(() => import("../components/home/contact"));
 
 const IndexPage = () => {
@@ -20,9 +23,9 @@ const IndexPage = () => {
       <Services />
       <Facts />
       <Pricing />
-      <Reviews />
+      <WorkingProcess />
       <PreviousWorks />
-      <Contact />
+      {/* <Contact /> */}
     </Layout>
   );
 };

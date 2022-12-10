@@ -7,7 +7,7 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
-import { BsPerson } from "react-icons/bs";
+import { BsPerson, BsPhone } from "react-icons/bs";
 import ArrowCircleRightRoundedIcon from "@mui/icons-material/ArrowCircleRightRounded";
 
 const HeroRequestService = () => {
@@ -50,12 +50,12 @@ const HeroRequestService = () => {
         <Grid item xs={4}>
           <TextField
             id="outlined-basic"
-            placeholder="Enter Name"
+            placeholder="Enter Number"
             variant="outlined"
             InputProps={{
               startAdornment: (
                 <InputAdornment position="start">
-                  <BsPerson />
+                  <BsPhone />
                 </InputAdornment>
               ),
             }}
