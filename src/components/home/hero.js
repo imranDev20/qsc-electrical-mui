@@ -7,13 +7,13 @@ import styled from "@emotion/styled";
 import { convertToBgImage } from "gbimage-bridge";
 import BackgroundImage from "gatsby-background-image";
 import { BsArrowRight } from "react-icons/bs";
+import HeroRequestService from "./hero-request-service";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
 import "swiper/css/effect-fade";
-import HeroRequestService from "./hero-request-service";
 
 const CustomSwiper = styled(Swiper)(() => ({
   height: "95vh",

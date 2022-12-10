@@ -109,6 +109,20 @@ export const theme = createTheme({
           }),
         },
         {
+          props: { variant: "orange" },
+          style: sx({
+            borderRadius: 0,
+            bgcolor: "primary.main",
+            color: "white",
+            "&:hover": {
+              bgcolor: "secondary.main",
+              color: "white",
+            },
+            px: 3,
+            py: 1.5,
+          }),
+        },
+        {
           props: { variant: "black-text" },
           style: sx({
             p: 0,

@@ -21,7 +21,7 @@ const Facts = () => {
   const bgImage = convertToBgImage(image);
 
   return (
-    <BackgroundImage style={{ mt: "100px" }} Tag="section" {...bgImage}>
+    <BackgroundImage style={{ marginTop: "100px" }} Tag="section" {...bgImage}>
       <Box sx={{ height: "90vh", position: "relative" }}>
         <Box
           sx={{

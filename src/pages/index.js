@@ -24,8 +24,8 @@ const IndexPage = () => {
       <Facts />
       <Pricing />
       <WorkingProcess />
+      <Contact />
       <PreviousWorks />
-      {/* <Contact /> */}
     </Layout>
   );
 };
